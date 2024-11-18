@@ -6,12 +6,11 @@ Communication contract:
 To REQUEST data from microservice, follow these steps:
 
    Prepare the Input File:
-  		Create or use a text file named 'bills_data.txt'. Ensure the file is empty before starting.
+  	Create or use a text file named 'bills_data.txt'. Ensure the file is empty before starting.
        
   Enter Data:
-		Write the following in the file, using a comma to separate the values: (NOTE: The comma is absolutely necessary for the microservice to function).
-          Number of roommates
-          Total bill amount
+	Write the following in the file, using a comma to separate the values: (NOTE: The comma is absolutely necessary for the microservice to function).
+          Number of roommates, Total bill amount
           
   Example: 
       * 5,9350 (for 5 roommates and a total bill of 9350) 
@@ -22,7 +21,7 @@ To REQUEST data from microservice, follow these steps:
   
   Example call:
   "billsData = open("bills_data.txt", "w")
-  billsData.write(str(total_roomies) +","+ str(total_bills))"
+   billsData.write(str(total_roomies) +","+ str(total_bills))"
 
 To RECEIVE data from microservice, follow these steps:
 
